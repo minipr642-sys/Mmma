@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: maestro-sniper-bot
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: BOT_TOKEN
+        value: 8262576157:AAENogSLc1ggOb2SWZ6No-g9AtgIe809L7Y
+      - key: PORT
+        value: 3000
+      - key: NODE_ENV
+        value: production
